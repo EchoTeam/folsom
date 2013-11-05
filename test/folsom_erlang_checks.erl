@@ -316,7 +316,7 @@ check_group_metrics() ->
     {counter, 0} = lists:keyfind(counter,1,Metrics).
 
 delete_metrics() ->
-    21 = length(ets:tab2list(?FOLSOM_TABLE)),
+    22 = length(ets:tab2list(?FOLSOM_TABLE)),
 
     ok = folsom_metrics:delete_metric(counter),
     ok = folsom_metrics:delete_metric(counter2),
